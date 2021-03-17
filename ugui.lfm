@@ -1,0 +1,113 @@
+object FormCalc: TFormCalc
+  Left = 400
+  Height = 152
+  Top = 160
+  Width = 256
+  Caption = 'Calc'
+  ClientHeight = 152
+  ClientWidth = 256
+  OnClose = FormClose
+  LCLVersion = '2.0.12.0'
+  object lbl_Number1: TLabel
+    Left = 8
+    Height = 15
+    Top = 8
+    Width = 64
+    Caption = 'Number 1'
+    ParentColor = False
+  end
+  object txt_Number1: TEdit
+    Left = 88
+    Height = 32
+    Top = 8
+    Width = 150
+    TabOrder = 0
+  end
+  object lbl_Number2: TLabel
+    Left = 8
+    Height = 15
+    Top = 40
+    Width = 64
+    Caption = 'Number 2'
+    ParentColor = False
+  end
+  object txt_Number2: TEdit
+    Left = 88
+    Height = 32
+    Top = 40
+    Width = 150
+    TabOrder = 1
+  end
+  object lbl_Result: TLabel
+    Left = 8
+    Height = 15
+    Top = 80
+    Width = 38
+    Caption = 'Result'
+    ParentColor = False
+  end
+  object txt_Result: TEdit
+    Left = 88
+    Height = 32
+    Top = 72
+    Width = 150
+    Font.Style = [fsBold]
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 2
+  end
+  object PanelBtn: TPanel
+    Left = 8
+    Height = 42
+    Top = 104
+    Width = 242
+    ClientHeight = 42
+    ClientWidth = 242
+    TabOrder = 3
+    object btn_Reset: TButton
+      Left = 0
+      Height = 25
+      Top = 8
+      Width = 64
+      Caption = 'C'
+      OnClick = Reset
+      TabOrder = 0
+    end
+    object btn_Add: TButton
+      Left = 72
+      Height = 25
+      Top = 8
+      Width = 40
+      Caption = '+'
+      OnClick = CalcAdd
+      TabOrder = 1
+    end
+    object btn_Sub: TButton
+      Left = 112
+      Height = 25
+      Top = 8
+      Width = 40
+      Caption = '-'
+      OnClick = CalcSub
+      TabOrder = 2
+    end
+    object btn_Mult: TButton
+      Left = 152
+      Height = 25
+      Top = 8
+      Width = 40
+      Caption = '*'
+      OnClick = CalcMult
+      TabOrder = 3
+    end
+    object btn_Div: TButton
+      Left = 192
+      Height = 25
+      Top = 8
+      Width = 40
+      Caption = '/'
+      OnClick = CalcDiv
+      TabOrder = 4
+    end
+  end
+end

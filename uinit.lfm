@@ -1,0 +1,28 @@
+object FormInit: TFormInit
+  Left = 466
+  Height = 80
+  Top = 264
+  Width = 250
+  Caption = 'Calculator App'
+  ClientHeight = 80
+  ClientWidth = 250
+  OnClose = FormClose
+  LCLVersion = '2.0.12.0'
+  object lbl_inform: TLabel
+    Left = 16
+    Height = 15
+    Top = 16
+    Width = 151
+    Caption = 'Welcome! Click to start!'
+    ParentColor = False
+  end
+  object btn_ok: TButton
+    Left = 168
+    Height = 25
+    Top = 40
+    Width = 75
+    Caption = 'OK'
+    OnClick = btn_okClick
+    TabOrder = 0
+  end
+end
